@@ -155,11 +155,71 @@ nav li a{
   margin-top: 30px;
 }
 
+/*deals part section*/
 .deals{
   text-align: center;
   margin: 50px;
 }
 
+/*deals bg part section*/
+
+.deals-section-bg{
+  display: grid;
+  grid-template-areas: 
+  "small-1 large"
+  "small-2 large";
+  margin: 20px 100px;
+  padding: 20px;
+  gap: 10px;
+}
+.deals-section-bg a{
+ color: white;
+}
+.deals-section-bg-1{
+  background-image: url('../assets/deal-bloom.png');
+  width: 367px;
+  height: 200px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  grid-area: small-1;
+  margin-left: 70px;
+  
+}
+.deals-section-bg-1-des{
+  text-align: center;
+  margin-top: 50px;
+}
+.deals-section-bg-2{
+  background-image: url('../assets/deal-ana.png');
+  width: 367px;
+  height: 200px;
+  color: white;
+  border-radius: 10px;
+  grid-area: small-2;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.deals-section-bg-2-des{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.deals-section-bg-3{
+  background-image: url('../assets/deal-zabo.png');
+  width: 753px;
+  height: 420px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  grid-area: large;
+  margin-right: 50px;
+}
+.deals-section-bg-3-des{
+  text-align: center;
+  margin-top: 180px;
+}
 
 
 @media screen and (max-width:576px){
@@ -251,4 +311,34 @@ nav li a{
   padding: 10px;
   /* margin-right: 20px; */
 }
+
+.deals-section-bg{
+grid-template-areas:
+          "small-1"
+          "small-2"
+          "large";
+          margin: 0 auto;
+          justify-content: center;
+          align-items: center;
+      }
+      .deals-section-bg-1,
+      .deals-section-bg-2,
+      .deals-section-bg-3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 370px;
+        height: 180px;
+        margin: 0 ;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .deals-section-bg-1-des ,
+      .deals-section-bg-2-des ,
+      .deals-section-bg-3-des{
+        margin: 0;
+        text-align: center;
+        
+      }
+
 }
